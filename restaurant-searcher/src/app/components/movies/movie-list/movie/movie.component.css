@@ -1,0 +1,28 @@
+
+.card .card-body {
+    max-height:150px;
+    overflow:auto;
+}
+
+#releasedate h1
+{
+    display: inline;
+    vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight:bold;
+}
+
+#releasedate p
+{
+    display: inline;
+    vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+ 
+    line-height: 28px;
+}
+
+    div {
+        background-color: rgb(185, 211, 173);
+    }

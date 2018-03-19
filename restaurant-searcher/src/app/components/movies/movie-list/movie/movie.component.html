@@ -1,0 +1,17 @@
+
+
+
+        
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="http://image.tmdb.org/t/p/w185{{movie.poster_path}}" alt="{{movie.title}}"  style="height:290px ; width:100%">
+          <div class="card-body">
+            <h4 class="card-title">{{movie.title}}</h4>
+          <div id ="releasedate">
+            <h1 class="card-title">Release date:    </h1><p class="card-text"> {{movie.release_date}}</p>
+          </div>
+            <p class="card-text"> {{movie.overview}}</p>
+  
+            <button type="button" (click)="addMovie(movie)" class="btn btn-primary" >Add to Favourites</button>
+          </div>
+        </div>
+        <br>

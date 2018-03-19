@@ -1,0 +1,35 @@
+
+
+
+  <div class="py-5 text-center" style="background-image: url(&quot;https://pingendo.github.io/templates/sections/assets/cover_event.jpg&quot;);">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-3 mb-4 text-primary">Manage your favourites</h1>
+          <p class="lead mb-5"> </p>
+
+      <button type="button" (click)="showFavourites()" class="btn btn-primary">View favourites</button>
+     
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+      <div class="row">
+<div *ngFor="let favourite of favourites;let i=index">
+  <div class="col-sm-4" >
+      <div class="card " style="width:400px">
+          <img class="card-img-top" src="http://image.tmdb.org/t/p/w185{{favourite.poster_path}}" alt="Card image"  style="height:290px ; width:100%">
+          <div class="card-body">
+            <h4 class="card-title">{{favourite.title}}</h4>
+            <p class="card-text"> {{favourite.overview}}</p>
+            <button (click)="deleteFavourite(i)" type="button" class="btn btn-danger" >Remove from Favourites </button>
+          </div>
+        </div>
+        <br>
+
+
+</div>
+</div>
+</div>
